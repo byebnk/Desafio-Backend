@@ -36,6 +36,9 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
     * Resgate é quando o usuário retira dinheiro de um ativo
     * Aplicações e resgates são transacionais e imutáveis. Uma vez realizada não há como alterar.
     * Usuários podem fazer aplicações/resgate em ativos cadastrados por qualquer usuário
+        * Exemplo:
+        * O usuário A cadastra um ativo chamado BITCOIN e faz uma aplicação de mil reais
+        * O usuário B pode aplicar no ativo BITCOIN também, pois ele já foi cadastrado pelo usuário A
 * Usuários devem ser capazes de visualizar o saldo da sua carteira de investimentos
     * Você pode decidir onde e como mostrar a informação
     * O saldo da carteira é o somatório de saldos investidos em cada um dos ativos
