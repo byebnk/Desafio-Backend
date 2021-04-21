@@ -60,7 +60,7 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
 * Testes
     * As funcionalidade principais devem estar com [testes](https://docs.djangoproject.com/en/3.1/topics/testing/) escritos
     * Você pode decidir quais os testes que mais agregam valor ao projeto
-* O escopo do teste é somente a API REST
+* O escopo do desafio é somente a API REST
     * Você não precisa desenvolver frontend/formulários para o sistema
     * Você apenas precisa desenvolver os 2 a 3 endpoints REST necessários para a realização dos requisitos obrigatórios
 
