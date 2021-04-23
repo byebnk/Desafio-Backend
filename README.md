@@ -30,8 +30,9 @@ certa, mas sim uma explicação racional por trás de cada decisão tomada.
 Usando [Django](https://www.djangoproject.com/) e [Django REST framework](https://www.django-rest-framework.org/)
 desenvolva uma API REST que permita usuários a gerenciar investimentos.
 
-* Usuários devem ser capazes de cadastrar ativos
-* Usuários devem ser capazes de fazer aplicações e resgates em um ativo
+### Usuários devem ser capazes de
+1. Cadastrar ativos
+2. Fazer aplicações e resgates em um ativo
     * Aplicação é quando o usuário aporta dinheiro em um ativo
     * Resgate é quando o usuário retira dinheiro de um ativo
     * Aplicações e resgates são transacionais e imutáveis. Uma vez realizada não há como alterar.
@@ -39,11 +40,15 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
         * Exemplo:
         * O usuário A cadastra um ativo chamado BITCOIN e faz uma aplicação de mil reais
         * O usuário B pode aplicar no ativo BITCOIN também, pois ele já foi cadastrado pelo usuário A
-* Usuários devem ser capazes de visualizar o saldo da sua carteira de investimentos
+3. Visualizar o saldo da sua carteira de investimentos
     * Você pode decidir onde e como mostrar a informação
     * O saldo da carteira é o somatório de saldos investidos em cada um dos ativos
-* Usuários não podem ver aplicações e resgates de outros usuários
-* Usuários não podem ver o saldo da carteira de outros usuários
+
+### Usuários não podem
+* Ver aplicações e resgates de outros usuários
+* Ver o saldo da carteira de outros usuários
+
+### Outros detalhes da API
 * A autenticação da API deve ser feita via token
     * Não é necessário desenvolver endpoints para criação/gerenciamento de usuários
 * Os ativos devem conter no mínimo as informações abaixo:
@@ -60,8 +65,8 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
 * Testes
     * As funcionalidade principais devem estar com [testes](https://docs.djangoproject.com/en/3.1/topics/testing/) escritos
     * Você pode decidir quais os testes que mais agregam valor ao projeto
-* O escopo do desafio é somente a API REST
-    * Você não precisa desenvolver frontend/formulários para o sistema
+* **O escopo do desafio é somente a API REST**
+    * Você **não** precisa desenvolver frontend/formulários para o sistema
     * Você apenas precisa desenvolver os 2 a 3 endpoints REST necessários para a realização dos requisitos obrigatórios
 
 ## Requisitos extras (opcional)
