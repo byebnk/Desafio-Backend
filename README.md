@@ -32,10 +32,18 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
 
 ### Usuários devem ser capazes de
 1. Cadastrar ativos
+    * Os ativos devem conter no mínimo as informações abaixo:
+        * Nome - uma denominação para este ativo
+        * Modalidade - renda fixa, renda variável ou cripto
 2. Fazer aplicações e resgates em um ativo
     * Aplicação é quando o usuário aporta dinheiro em um ativo
     * Resgate é quando o usuário retira dinheiro de um ativo
     * Aplicações e resgates são transacionais e imutáveis. Uma vez realizada não há como alterar.
+    * As aplicações e resgates devem conter no mínimo as informações abaixo:
+        * Ativo - O ativo ao qual a aplicação/resgate se refere
+        * Data de solicitação - a data em que a aplicação/resgate foi solicitada
+        * Quantidade - número de ativos que foram aplicados/resgatados
+        * Preço unitário - preço unitário do ativo na aplicação/resgate
     * Usuários podem fazer aplicações/resgate em ativos cadastrados por qualquer usuário
         * Exemplo:
         * O usuário A cadastra um ativo chamado BITCOIN e faz uma aplicação de mil reais
@@ -49,30 +57,19 @@ desenvolva uma API REST que permita usuários a gerenciar investimentos.
 * Ver o saldo da carteira de outros usuários
 
 ### Outros detalhes da API
-* A autenticação da API deve ser feita via token
-    * Não é necessário desenvolver endpoints para criação/gerenciamento de usuários
-* Os ativos devem conter no mínimo as informações abaixo:
-    * Identificador - um identificador aleatório gerado automaticamente
-    * Nome - uma denominação para este ativo
-    * Modalidade - renda fixa, renda variável ou cripto
-* As aplicações e resgates devem conter no mínimo as informações abaixo:
-    * Identificador - um identificador aleatório gerado automaticamente
-    * Ativo - O ativo ao qual a aplicação/resgate se refere
-    * Quantidade - número de ativos que foram aplicados/resgatados
-    * Preço unitário - preço unitário do ativo na aplicação/resgate
-    * Endereço de IP - endereço de IP que solicitou a aplicação/resgate
-    * Data de solicitação - a data em que a aplicação/resgate foi solicitada
 * Testes
     * As funcionalidade principais devem estar com [testes](https://docs.djangoproject.com/en/3.1/topics/testing/) escritos
-    * Você pode decidir quais os testes que mais agregam valor ao projeto
+    * Não é preciso testar tudo, você pode decidir quais os testes que mais agregam valor ao projeto
 * **O escopo do desafio é somente a API REST**
     * Você **não** precisa desenvolver frontend/formulários para o sistema
+    * Você **não** precisa desenvolver endpoints para criação/gerenciamento de usuários
     * Você apenas precisa desenvolver os 2 a 3 endpoints REST necessários para a realização dos requisitos obrigatórios
 
 ## Requisitos extras (opcional)
 * Permitir os usuários listar ativos por tipo (renda fixa, renda váriavel, cripto)
 * Adicionar o preço de mercado de cada ativo e calcular o saldo de carteira utilizando ele
 * Permitir os usuários visualizar o lucro/prejuízo realizado
+* Salvar o endereço de IP do usuário que fez uma aplicação/resgate
 * Expandir o sistema adicionando taxa de custódia, administração, tarifa de saque, etc...
 
 ## O que vamos avaliar (nesta ordem)
